@@ -40,6 +40,5 @@ Ese número recibirá las confirmaciones de asistencia.
 - Ubicación: El Zorzal 2917, San Francisco Solano + Google Maps
 - Cuenta regresiva
 - Galería de fotos
-- Dress code sugerido (casual elegante / tonos claros o celestes)
 - Lista de regalos + alias `Mateo.valentin.HOGAR`
 - Formulario RSVP → mensaje WhatsApp automático

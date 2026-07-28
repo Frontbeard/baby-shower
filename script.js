@@ -436,7 +436,6 @@ form?.addEventListener("submit", (e) => {
   const restricciones = String(data.get("restricciones") || "").trim() || "Ninguna";
   const comentarios = String(data.get("comentarios") || "").trim() || "Sin comentarios";
   const asistencia = getRadio("asistencia");
-  const dresscode = getRadio("dresscode");
 
   const message = [
     "¡Hola! Confirmo asistencia al Baby Shower de Mateo 💙",
@@ -445,7 +444,6 @@ form?.addEventListener("submit", (e) => {
     `*Nombre y apellido:* ${nombre}`,
     `*Cantidad de personas:* ${personas}`,
     `*Restricciones alimenticias:* ${restricciones}`,
-    `*Dress code:* ${dresscode}`,
     `*Comentarios:* ${comentarios}`,
   ].join("\n");
 

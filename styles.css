@@ -674,27 +674,6 @@ a {
   margin: 0 auto;
 }
 
-.section--dress {
-  text-align: center;
-  background: linear-gradient(180deg, transparent, rgba(138, 154, 124, 0.1));
-}
-
-.swatches {
-  display: flex;
-  justify-content: center;
-  gap: 0.55rem;
-  margin-top: 1.5rem;
-}
-
-.swatches span {
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  background: var(--c);
-  border: 1px solid rgba(44, 53, 64, 0.12);
-  box-shadow: 0 4px 10px rgba(44, 53, 64, 0.08);
-}
-
 .alias-box {
   margin: 2rem 0;
   padding: 1.5rem;
