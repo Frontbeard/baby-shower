@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Invitación al Baby Shower de Mateo — domingo 30 de agosto" />
+  <meta name="theme-color" content="#6B92B0" />
+  <title>Baby Shower de Mateo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Outfit:wght@300;400;500;600&family=Parisienne&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- SOBRE -->
+  <div id="envelope-overlay" class="envelope-overlay" aria-hidden="false">
+    <button type="button" class="envelope" id="open-envelope" aria-label="Abrir invitación">
+      <span class="env">
+        <span class="env__shadow" aria-hidden="true"></span>
+        <span class="env__back" aria-hidden="true"></span>
+        <span class="env__card">
+          <span class="env__card-name">Mateo</span>
+          <span class="env__card-sub">Baby Shower</span>
+        </span>
+        <span class="env__front" aria-hidden="true"></span>
+        <span class="env__lid" aria-hidden="true"></span>
+        <span class="env__seal" aria-hidden="true">M</span>
+      </span>
+      <span class="envelope__hint">Tocá el sobre para abrir</span>
+    </button>
+  </div>
+
+  <!-- INVITACIÓN -->
+  <main id="invitation" class="invitation" hidden>
+    <header class="hero">
+      <div class="hero__media">
+        <img
+          src="images/foto-padres.jpg"
+          alt="Flor y su pareja esperando a Mateo"
+          width="1086"
+          height="1448"
+          fetchpriority="high"
+          decoding="async"
+        />
+        <div class="hero__veil"></div>
+      </div>
+      <div class="hero__content">
+        <p class="hero__eyebrow">La dulce espera</p>
+        <h1 class="hero__title">Baby Shower<br /><em>de <span class="hero__name">Mateo</span></em></h1>
+        <p class="hero__lead">Una tarde de amor, mate y emoción para celebrar su llegada.</p>
+        <a class="btn btn--light" href="#confirmar">Confirmar asistencia</a>
+      </div>
+    </header>
+
+    <nav class="nav" aria-label="Secciones">
+      <a href="#cuando">Fecha</a>
+      <a href="#galeria">Fotos</a>
+      <a href="#regalos">Regalos</a>
+      <a href="#confirmar">RSVP</a>
+      <a href="#mapa">Mapa</a>
+    </nav>
+
+    <section class="section section--invite" id="mensaje">
+      <div class="section__inner">
+        <p class="script">Te invitamos</p>
+        <h2>A celebrar la llegada de Mateo</h2>
+        <p class="prose">
+          La dulce espera está llegando a su momento más especial.
+          Queremos invitarte a compartir con nosotros una tarde llena de amor,
+          alegría y mucha emoción.
+        </p>
+        <p class="prose">
+          Nos encantaría contar con tu presencia para compartir juntos este momento
+          tan importante para nuestra familia.
+        </p>
+        <p class="prose prose--accent">
+          La celebración será una merienda: pueden traer su equipo de mate
+          para compartir una linda tarde juntos.
+        </p>
+        <p class="closing">¡Te esperamos para celebrar juntos!</p>
+      </div>
+    </section>
+
+    <section class="section section--countdown" id="cuando" aria-labelledby="countdown-title">
+      <div class="section__inner">
+        <p class="eyebrow">Fecha y lugar</p>
+        <h2 id="countdown-title">Domingo 30 de agosto</h2>
+        <p class="time-line">De 13 a 17 hs</p>
+        <div class="countdown" id="countdown" role="timer" aria-live="polite">
+          <div class="countdown__unit">
+            <span class="countdown__num" data-unit="days">00</span>
+            <span class="countdown__label">días</span>
+          </div>
+          <div class="countdown__unit">
+            <span class="countdown__num" data-unit="hours">00</span>
+            <span class="countdown__label">horas</span>
+          </div>
+          <div class="countdown__unit">
+            <span class="countdown__num" data-unit="mins">00</span>
+            <span class="countdown__label">min</span>
+          </div>
+          <div class="countdown__unit">
+            <span class="countdown__num" data-unit="secs">00</span>
+            <span class="countdown__label">seg</span>
+          </div>
+        </div>
+        <div class="event-place">
+          <p class="eyebrow">Dirección</p>
+          <h3 class="event-place__title">El Zorzal 2917</h3>
+          <p class="prose">San Francisco Solano</p>
+          <a class="btn btn--ghost" href="#mapa">Ver mapa</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--gallery" id="galeria">
+      <div class="section__inner">
+        <p class="eyebrow">Galería</p>
+        <h2>Los futuros papás</h2>
+        <p class="prose">Un pedacito de esta dulce espera.</p>
+        <div class="gallery">
+          <figure class="gallery__item gallery__item--wide">
+            <img src="images/foto-padres.jpg" alt="Flor y su pareja esperando a Mateo" width="1086" height="1448" loading="lazy" />
+          </figure>
+          <figure class="gallery__item">
+            <img src="images/foto-barriga.jpg" alt="Detalle artístico de la panza con un autito" width="1206" height="1446" loading="lazy" />
+          </figure>
+          <figure class="gallery__item">
+            <img src="images/eco.jpg" alt="Ecografía de Mateo" width="953" height="618" loading="lazy" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--gifts" id="regalos">
+      <div class="section__inner section__inner--wide">
+        <p class="eyebrow">Para Mateo</p>
+        <h2>Lista de regalos</h2>
+        <p class="prose">
+          Elegí un regalito y tocá <strong>Yo lo regalo</strong> para reservarlo.
+          Así nadie más elige lo mismo. También pueden colaborar con el alias de los papás.
+        </p>
+
+        <div class="alias-box">
+          <p class="alias-box__label">Alias</p>
+          <p class="alias-box__value" id="alias-text">Mateo.valentin.HOGAR</p>
+          <button type="button" class="btn btn--ghost" id="copy-alias">Copiar alias</button>
+          <p class="alias-box__note">
+            Está a nombre de Florencia Rocío Cabañas para mejor organización;
+            después el total será transferido a los papis.
+          </p>
+        </div>
+
+        <div class="wishlist-toolbar" id="wishlist-filters" role="tablist" aria-label="Filtrar regalos"></div>
+        <p class="wishlist-status" id="wishlist-status" aria-live="polite">Cargando lista…</p>
+        <div class="wishlist-grid" id="wishlist"></div>
+        <button type="button" class="btn btn--ghost wishlist-more" id="wishlist-more" hidden>Ver más regalos</button>
+      </div>
+    </section>
+
+    <section class="section section--rsvp" id="confirmar">
+      <div class="section__inner section__inner--narrow">
+        <p class="eyebrow">Confirmación</p>
+        <h2>¿Nos acompañás?</h2>
+        <p class="prose">Completá el formulario y se abrirá WhatsApp con tu mensaje listo para enviar.</p>
+
+        <form class="rsvp" id="rsvp-form" novalidate>
+          <fieldset class="rsvp__fieldset">
+            <legend>¿Vas a asistir?</legend>
+            <div class="rsvp__radios">
+              <label class="chip">
+                <input type="radio" name="asistencia" value="Sí, asistiré" required />
+                <span>Sí, asistiré</span>
+              </label>
+              <label class="chip">
+                <input type="radio" name="asistencia" value="No podré asistir" />
+                <span>No podré asistir</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <label class="field">
+            <span>Nombre y apellido</span>
+            <input type="text" name="nombre" autocomplete="name" required placeholder="Tu nombre completo" />
+          </label>
+
+          <label class="field">
+            <span>Cantidad de personas</span>
+            <input type="number" name="personas" min="1" max="20" value="1" required />
+          </label>
+
+          <label class="field">
+            <span>Restricciones alimenticias</span>
+            <input type="text" name="restricciones" placeholder="Ninguna / vegetariano / celíaco…" />
+          </label>
+
+          <fieldset class="rsvp__fieldset">
+            <legend>¿Confirmás el dress code?</legend>
+            <div class="rsvp__radios">
+              <label class="chip">
+                <input type="radio" name="dresscode" value="Sí, lo tengo en cuenta" required />
+                <span>Sí</span>
+              </label>
+              <label class="chip">
+                <input type="radio" name="dresscode" value="Prefiero otra opción" />
+                <span>Otra opción</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <label class="field">
+            <span>Comentarios adicionales</span>
+            <textarea name="comentarios" rows="3" placeholder="Opcional"></textarea>
+          </label>
+
+          <button type="submit" class="btn btn--primary btn--full">Enviar por WhatsApp</button>
+          <p class="form-note" id="form-note" hidden></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section section--location" id="mapa">
+      <div class="section__inner">
+        <p class="eyebrow">Ubicación</p>
+        <h2>Cómo llegar</h2>
+        <p class="prose">El Zorzal 2917, San Francisco Solano</p>
+        <a
+          class="btn btn--primary"
+          href="https://www.google.com/maps/search/?api=1&query=El+Zorzal+2917,+San+Francisco+Solano"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Abrir en Google Maps
+        </a>
+      </div>
+      <div class="map-frame">
+        <iframe
+          title="Mapa de El Zorzal 2917, San Francisco Solano"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://maps.google.com/maps?q=El%20Zorzal%202917%2C%20San%20Francisco%20Solano&t=&z=16&ie=UTF8&iwloc=&output=embed"
+        ></iframe>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="script">Con amor</p>
+      <p>Flor &amp; familia</p>
+      <p class="footer__baby">Esperando a Mateo</p>
+      <p class="footer__credit">
+        Desarrollado por
+        <a href="https://www.instagram.com/hako.std/" target="_blank" rel="noopener noreferrer">Hako Studio</a>
+      </p>
+    </footer>
+  </main>
+
+  <dialog class="claim-modal" id="claim-modal" aria-labelledby="claim-modal-title">
+    <form method="dialog" class="claim-modal__card" id="claim-form">
+      <h3 id="claim-modal-title">Reservar regalo</h3>
+      <p class="claim-modal__item" id="claim-item-name"></p>
+      <label class="field">
+        <span>Tu nombre y apellido</span>
+        <input type="text" id="claim-name" name="claimName" required minlength="2" maxlength="80" placeholder="Ej: Ana Pérez" autocomplete="name" />
+      </label>
+      <p class="claim-modal__error" id="claim-error" hidden></p>
+      <div class="claim-modal__actions">
+        <button type="button" class="btn btn--ghost" id="claim-cancel">Cancelar</button>
+        <button type="submit" class="btn btn--primary" id="claim-confirm">Confirmar</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="wishlist-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

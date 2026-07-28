@@ -1,0 +1,11 @@
+﻿node_modules/
+.chrome-profile-ml/
+*.log
+_*.mjs
+_*.json
+_*.html
+_*.txt
+.DS_Store
+Thumbs.db
+WhatsApp Image*.jpeg
+WhatsApp Image*.jpg
