@@ -438,7 +438,7 @@ form?.addEventListener("submit", (e) => {
   const asistencia = getRadio("asistencia");
 
   const message = [
-    "¡Hola! Confirmo asistencia al Baby Shower de Mateo \u{1F499}",
+    "\u00A1Hola! Confirmo asistencia al Baby Shower de Mateo \u{1F499}",
     "",
     `*Asistencia:* ${asistencia}`,
     `*Nombre y apellido:* ${nombre}`,
