@@ -433,8 +433,6 @@ form?.addEventListener("submit", (e) => {
   const data = new FormData(form);
   const nombre = String(data.get("nombre") || "").trim();
   const personas = data.get("personas");
-  const restricciones = String(data.get("restricciones") || "").trim() || "Ninguna";
-  const comentarios = String(data.get("comentarios") || "").trim() || "Sin comentarios";
   const asistencia = getRadio("asistencia");
 
   const message = [
@@ -443,8 +441,6 @@ form?.addEventListener("submit", (e) => {
     `*Asistencia:* ${asistencia}`,
     `*Nombre y apellido:* ${nombre}`,
     `*Cantidad de personas:* ${personas}`,
-    `*Restricciones alimenticias:* ${restricciones}`,
-    `*Comentarios:* ${comentarios}`,
   ].join("\n");
 
   const url = `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(message)}`;
